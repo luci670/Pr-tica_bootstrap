@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;      /* Quebra para próxima linha quando acabar espaço */
+  gap: 10px;            /* Espaçamento (gutter) entre as imagens */
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+}
+
+.galeria img {
+  flex-grow: 1;          /* Pode crescer para preencher espaço */
+  flex-shrink: 1;        /* Pode encolher se necessário */
+  flex-basis: 150px;     /* Tamanho base: 150px de largura */
+  max-width: 100%;       /* Para não ultrapassar o container */
+  height: auto;          /* Mantém proporção da imagem */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 200px;
+  gap: 10px;
+  position: relative;
+}
+
+.imagem-fundo {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  overflow: hidden;
+}
+
+.imagem-fundo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-sobreposto {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: center;
+  justify-self: center;
+  background-color: rgba(0, 0, 0, 0.6); /* fundo semi-transparente */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}

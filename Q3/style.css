@@ -1,0 +1,45 @@
+/* Estilos básicos e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo à esquerda, links à direita */
+  align-items: center;            /* Centraliza verticalmente */
+  padding: 15px 20px;             /* Padding vertical e horizontal */
+  background-color: #333;         /* Cor de fundo escura */
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Lista de links */
+.nav-links {
+  list-style: none;
+  display: flex;                  /* Links em linha */
+  gap: 20px;                     /* Espaço entre links */
+}
+
+/* Links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00aaff;                /* Cor diferente ao passar o mouse */
+}

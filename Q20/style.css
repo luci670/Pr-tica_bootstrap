@@ -1,0 +1,16 @@
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* espaçamento entre itens (gutter) */
+}
+
+.item {
+  flex: 1 1 calc((100% / 3) - 16px); /* 3 itens por linha considerando o gap */
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 6px;
+  min-width: 0; /* evita overflow */
+}

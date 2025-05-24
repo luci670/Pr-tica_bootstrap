@@ -1,0 +1,30 @@
+.ficha-usuario {
+  display: flex;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ffffff;   /* borda branca */
+  background-color: #000000;    /* fundo preto */
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.ficha-usuario__foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;           /* espaçamento de 10px */
+  border: 2px solid #ffffff;    /* contorno branco na foto */
+}
+
+.ficha-usuario__nome {
+  margin: 0 0 6px;
+  font-size: 1.3em;
+  color: #ffffff;               /* texto branco */
+}
+
+.ficha-usuario__descricao {
+  margin: 0;
+  font-size: 0.9em;
+  color: #f0f0f0;               /* tom suave de branco */
+}
